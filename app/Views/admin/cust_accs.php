@@ -104,6 +104,56 @@
         background: #fef3c7;
     }
 
+    .pagination {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .4rem;
+        margin: 0;
+    }
+
+    .pagination li {
+        list-style: none;
+    }
+
+    .pagination li a {
+        display: grid;
+        min-width: 2.25rem;
+        height: 2.25rem;
+        place-items: center;
+        padding: 0 .7rem;
+        color: #475569;
+        border: 1px solid #dbe5f0;
+        border-radius: 8px;
+        background: #fff;
+        font-size: .85rem;
+        text-decoration: none;
+        transition: all .2s ease;
+    }
+
+    .pagination li a:hover {
+        color: #1e40af;
+        border-color: #93c5fd;
+        background: #eff6ff;
+    }
+
+    .pagination li.active a {
+        color: #fff;
+        border-color: #1e40af;
+        background: #1e40af;
+        font-weight: 700;
+    }
+
+    @media (max-width: 650px) {
+        .table-card > .d-flex {
+            justify-content: center !important;
+        }
+
+        .table-card > .d-flex small {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
     @media (max-width: 650px) {
         .page-heading {
             display: block;
