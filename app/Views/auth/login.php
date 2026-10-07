@@ -218,6 +218,19 @@ $success = session()->getFlashdata('success');
             text-decoration: none;
         }
 
+        .back-link {
+            display: block;
+            margin-top: 1rem;
+            color: var(--muted);
+            text-align: center;
+            font-size: .88rem;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            color: var(--blue);
+        }
+
         .security-note {
             display: flex;
             justify-content: center;
@@ -292,6 +305,7 @@ $success = session()->getFlashdata('success');
                     <button type="submit">Sign in securely</button>
                 </form>
                 <p class="helper">Having trouble signing in? Contact your administrator.</p>
+                <a class="back-link" href="<?= base_url('/') ?>">Back to home</a>
                 <div class="security-note">Your information is protected</div>
             </div>
         </section>
